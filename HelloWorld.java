@@ -1,16 +1,17 @@
-import java.lang.*;
+public class HelloWorld implements Runnable {
 
-public class HelloWorld{
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i + ". Hello from child thread!");
+        }
+    }
 
-	public static void main(String arg[]){
-		System.out.print("Hi there ! ");
-		System.out.println("Hello World");
-		System.out.println("abc");
-	    String cde = "cde";
-	    System.out.println("abc" + cde);
-	    String c = "abc".substring(2,3);
-	    String d = cde.substring(0, 2);
-		System.out.println(c + " " + d);
+    public static void main(String args[]) {
+        Thread t = new Thread(new HelloWorld());
+        t.start();
 
-	}
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i + ". Amulya Kumar Shahi (main thread)");
+        }
+    }
 }
