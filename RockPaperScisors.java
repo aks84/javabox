@@ -13,7 +13,7 @@ public class RockPaperScisors{
 			System.out.println("\nEnter your move (r, p, or s)");
 			playerMove = sc.nextLine();
 			if(playerMove.equals("r") || playerMove.equals("p") || playerMove.equals("s")){
-			}else{
+ 			}else{
 				System.out.println(playerMove + " is not a valid move. ");
 			}
 			System.out.println("Computer played " + computerMove);
@@ -22,27 +22,27 @@ public class RockPaperScisors{
 
 			}else if(playerMove.equals("r")){
 				if (computerMove.equals("p")){
-					System.out.println("You lose!");
+					System.out.println("\tYou lose!");
 				}else if (computerMove.equals("s")){
-					System.out.println("You win!.");
+					System.out.println("\tYou win!");
 
 				}
 			}
 
 			else if(playerMove.equals("p")){
 				if (computerMove.equals("r")){
-					System.out.println("You win!");
+					System.out.println("\tYou win!");
 				}else if (computerMove.equals("s")){
-					System.out.println("You lose!.");
+					System.out.println("\tYou lose!");
 
 				}
 			}
 
 			else if(playerMove.equals("s")){
 				if (computerMove.equals("p")){
-					System.out.println("You win!");
+					System.out.println("\tYou win!");
 				}else if (computerMove.equals("r")){
-					System.out.println("You lose!.");
+					System.out.println("\tYou lose!");
 
 				}
 			}
