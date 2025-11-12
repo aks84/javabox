@@ -12,7 +12,7 @@ public class RandNumGame{
 			Scanner sc = new Scanner(System.in);
 			int guessNum = sc.nextInt();
 			if(guessNum == randNum){
-				System.out.print("Correct! You Won!!");
+				System.out.print("Correct! You Win!!");
 			break;
 			}else if (randNum > guessNum){
 				System.out.println("Above the guessed number. Try again!");

@@ -22,27 +22,27 @@ public class RockPaperScisors{
 
 			}else if(playerMove.equals("r")){
 				if (computerMove.equals("p")){
-					System.out.println("\tYou lose!");
+					System.out.println("\t\tYou lose!");
 				}else if (computerMove.equals("s")){
-					System.out.println("\tYou win!");
+					System.out.println("\t\tYou win!");
 
 				}
 			}
 
 			else if(playerMove.equals("p")){
 				if (computerMove.equals("r")){
-					System.out.println("\tYou win!");
+					System.out.println("\t\tYou win!");
 				}else if (computerMove.equals("s")){
-					System.out.println("\tYou lose!");
+					System.out.println("\t\tYou lose!");
 
 				}
 			}
 
 			else if(playerMove.equals("s")){
 				if (computerMove.equals("p")){
-					System.out.println("\tYou win!");
+					System.out.println("\t\tYou win!");
 				}else if (computerMove.equals("r")){
-					System.out.println("\tYou lose!");
+					System.out.println("\t\tYou lose!");
 
 				}
 			}
