@@ -1,18 +1,17 @@
 package com.mycompany.helloworld;
 
-import java.util.Iterator;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 public class HelloWorld extends Thread{
 	
 	public static void main(String args[]){
-		
-		System.out.print("\n Enter a month number: ");
 		Scanner sc = new Scanner(System.in);
-		
+		while(true) {
+		System.out.print("\n Enter a month number (1-12) : ");
 		int month = sc.nextInt();
 		String msg;
+		
 		if(month<1 || month > 12)
 			msg = "Not a month numbjer";
 		else if(month <= 3) {
@@ -26,8 +25,10 @@ public class HelloWorld extends Thread{
 		}else {
 			msg = "4th Quater";
 		}
-		System.out.print(" " + msg + "\n "+ msg.length());
-		sc.close();
+		System.out.print(" " + msg + "\n ");
+		
+		}
+		
 	
 	}
 
